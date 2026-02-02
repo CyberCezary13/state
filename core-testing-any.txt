@@ -1,0 +1,6 @@
+# Repository: core-testing-any
+# Generated: 2026-02-02T15:04:57.318311
+# Package count: 1
+# Format: package-name version1 version2 commit-hash
+#
+iana-etc 20260124-1 20260124-1 f8bea6cb09aa87b1ef9745c927cdca9b8c8b8dca

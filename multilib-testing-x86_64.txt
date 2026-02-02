@@ -1,0 +1,10 @@
+# Repository: multilib-testing-x86_64
+# Generated: 2026-02-02T15:04:57.632176
+# Package count: 5
+# Format: package-name version1 version2 commit-hash
+#
+lib32-audit 4.1.3-1 4.1.3-1 4e3216ae4879d68e7f49a77f9a80df096032bb07
+lib32-expat 2.7.4-1 2.7.4-1 9bbc4fa4fea0a2095c80da450d03ef62ed5f1af8
+lib32-libgcrypt 1.12.0-1 1.12.0-1 a5e56835b7ff0bceab2260bff4aff9f3115d747d
+lib32-llvm 1:21.1.8-1 1-21.1.8-1 9ef2fbbd0e7239fb6dcb55cdfc5ad6933f58f415
+steam 1.0.0.85-3 1.0.0.85-3 c84ca9d41c47ffe646ad767b6e64d58d8ad9ce95

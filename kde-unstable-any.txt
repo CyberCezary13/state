@@ -1,0 +1,13 @@
+# Repository: kde-unstable-any
+# Generated: 2026-02-02T15:04:57.629034
+# Package count: 8
+# Format: package-name version1 version2 commit-hash
+#
+breeze-grub 6.5.91-1 6.5.91-1 8ce89e82a08b4aafd31f293e6caa1ce6704cd531
+breeze-gtk 6.5.91-1 6.5.91-1 8105b6a5c0c1ca228c5c6bababcbba2a35a980bf
+breeze-plymouth 5.92.0-1 5.92.0-1 e8245a942564f6d2806ce12024047af514676eca
+ocean-sound-theme 6.5.91-1 6.5.91-1 cd29568410f2cb42d32adaa4b3b37438cf6f9265
+oxygen-sounds 6.5.91-1 6.5.91-1 04b862e2225d0eaa5730f1eec6722dd06888807d
+plasma-meta 6.6-1 6.6-1 a343ce2542b67c060bea97e0903fcab354b9a4dd
+plasma-workspace-wallpapers 6.5.91-1 6.5.91-1 e28abe90e78471be2fa705590efcc762fbe4a216
+qt6-translations 6.11.0beta2-1 6.11.0beta2-1 615bca7cbe257580f9d79051ec5e30dd7b9097f0

@@ -1,0 +1,13 @@
+# Repository: gnome-unstable-any
+# Generated: 2026-02-02T15:04:57.627336
+# Package count: 8
+# Format: package-name version1 version2 commit-hash
+#
+adwaita-icon-theme 50alpha-1 50alpha-1 c1edc6cecf1d5fde818f5bb755c8fbd44938b93f
+blueprint-compiler 0.19.0-1 0.19.0-1 38a0d168f00a16696619d4974dbe0e96888b7e71
+gnome-backgrounds 50alpha-1 50alpha-1 495a2c77363e88e4a0c89deffde9e2a7d06e7c7b
+gnome-shell-extensions 50alpha-1 50alpha-1 55e786a47eb1e931eb01284c487667a71fc0e496
+gnome-user-docs 50beta-1 50beta-1 0bd028e8ba1814d50a3988975e0b912c83307617
+gnome-weather 50beta-1 50beta-1 c6108d125be3f696bd47d744503e5495a247b977
+gsettings-desktop-schemas 50alpha-1 50alpha-1 8769986d1bec670f59b07795dba26b1f76696999
+showtime 50beta-1 50beta-1 e36270c168a19eb207b90b9146c668c71ee54f03
