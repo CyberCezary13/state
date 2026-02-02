@@ -26,10 +26,16 @@ class PackageStateQuery:
                 repos.append(item)
         return sorted(repos)
     
+    # Package state file format constants
+    EXPECTED_FIELDS = 4  # package-name version1 version2 commit-hash
+    
     def _parse_package_line(self, line: str) -> Tuple[str, str, str, str]:
-        """Parse a package state line."""
+        """Parse a package state line.
+        
+        Returns: (package_name, version, previous_version, commit_hash)
+        """
         parts = line.strip().split()
-        if len(parts) >= 4:
+        if len(parts) >= self.EXPECTED_FIELDS:
             return parts[0], parts[1], parts[2], parts[3]
         return "", "", "", ""
     
@@ -47,7 +53,7 @@ class PackageStateQuery:
                             'repository': repo.name,
                             'package': name,
                             'version': ver1,
-                            'version2': ver2,
+                            'previous_version': ver2,
                             'commit': commit
                         })
         return results
@@ -77,7 +83,7 @@ class PackageStateQuery:
                         'repository': repo_name,
                         'package': name,
                         'version': ver1,
-                        'version2': ver2,
+                        'previous_version': ver2,
                         'commit': commit
                     }
         return {}
@@ -119,7 +125,8 @@ def main():
         if results:
             print(f"Found '{args.package}' in {len(results)} repository/repositories:")
             for result in results:
-                print(f"  {result['repository']}: {result['package']} {result['version']} (commit: {result['commit'][:8]})")
+                commit_short = result['commit'][:8] if len(result['commit']) >= 8 else result['commit']
+                print(f"  {result['repository']}: {result['package']} {result['version']} (commit: {commit_short})")
         else:
             print(f"Package '{args.package}' not found in any repository")
             sys.exit(1)
@@ -150,7 +157,7 @@ def main():
     elif args.command == 'repos':
         print("Available repositories:")
         for repo in query.repos:
-            count = len(list(repo.iterdir()))
+            count = sum(1 for _ in repo.iterdir())
             print(f"  {repo.name} ({count} packages)")
 
 
